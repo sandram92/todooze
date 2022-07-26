@@ -5,7 +5,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "import"],
   "env": {
     "browser": true,
     "es6": true
@@ -25,9 +25,20 @@
   },
   "rules": {
     "linebreak-style": "off",
+    "quotes": [2, "single", { "avoidEscape": true }],
     "prettier/prettier": [
       "error",
       {
+        "semi": true,
+        "printWidth": 100,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "useTabs": false,
+        "arrowParens": "avoid",
+        "jsxSingleQuote": false,
+        "trailingComma": "all",
         "endOfLine": "auto"
       }
     ]
